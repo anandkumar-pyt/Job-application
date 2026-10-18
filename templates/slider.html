@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" , href="{{url_for('static', filename= 'css/bar.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/slider.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="row">
+            
+        </div>
+        <div class="buttonContainer">
+            <div class="left-button">left</div>
+            <div class="right-button">right</div>
+        </div>
+    <div class="graph-container">
+    <h2>Job Status Graph</h2>
+
+    <div class="graph">
+        <div class="bar-group">
+            <div class="bar" id="appliedBar"></div>
+            <p>Applied</p>
+        </div>
+
+        <div class="bar-group">
+            <div class="bar" id="interviewBar"></div>
+            <p>Interview</p>
+        </div>
+
+        <div class="bar-group">
+            <div class="bar" id="selectedBar"></div>
+            <p>Selected</p>
+        </div>
+
+        <div class="bar-group">
+            <div class="bar" id="rejectedBar"></div>
+            <p>Rejected</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="{{ url_for('static', filename='js/chart.js') }}"></script>
+    <script src="{{url_for('static', filename='js/slider.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.slider-container{
+    overflow-x:hidden;
+    margin:auto;
+}
+.slider-container ::-webkit-scrollbar{
+    display:none;
+}
+.sliders{
+    display:flex;
+    transition: transform 0.5s ease-in-out;
+    transform:scaleX(1);
+    gap:3px
+
+}
+.card{
+    flex: 0 0 auto;
+    text-align: center;
+    width:33%;
+}

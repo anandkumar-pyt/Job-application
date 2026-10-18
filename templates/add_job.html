@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job_Title :ADD JOB</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/style.css')}}">
+</head>
+<body>
+    <h1>Add Your Jobs Here</h1>
+    <div class="container">
+        <form action="{{url_for('add_job')}}" method="POST">
+            <label for="company">Company</label>
+            <input type="text" name="company" id="company" placeholder="Enter the company Name">
+            <label for="role">Role</label>
+            <input type="text" name="role" id="role" placeholder="Enter the role Name">
+            <label for="location">Location</label>
+            <input type="text" name="location" id="location" placeholder="Enter the location Name">
+            <label>Application Status</label>
+            <select name="status">
+                <option value="Applied">Applied</option>
+                <option value="Interview">Interview</option>
+                <option value="Selected">Selected</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="{{ url_for('home') }}">Back to Dashboard</a>
+    </div>
+    
+</body>
+</html>
